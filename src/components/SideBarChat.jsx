@@ -61,7 +61,7 @@ const SideBarChat = ({ id, chatName }) => {
                 <p>{chatInfo[0]?.message}</p>
                 <TimeStamp>
                     {
-                        timeago.format(new Date(chatInfo[0]?.timestamp.toDate()))
+                        timeago.format(new Date(chatInfo[0]?.timestamp?.toDate()))
                     }
                 </TimeStamp>
             </SidebarChatInfoContainer>

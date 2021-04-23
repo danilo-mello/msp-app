@@ -77,7 +77,7 @@ const Chat = () => {
             db
                 .collection("chats")
                 .doc(chatId)
-                .collection("message")
+                .collection("messages")
                 .orderBy("timestamp", "desc")
                 .onSnapshot((snapshot) => setMessages(
                     snapshot.docs.map((doc) => ({
